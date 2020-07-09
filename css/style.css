@@ -11,22 +11,38 @@
     --button-color:#2196F3;
 }
 
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* outline: 2px solid tomato;    */
+}
+
+
 body {
     background-color:#ffffff;
     color: var(--primery-text-color);
     font-family: "Roboto", sans-serif;
     font-size: 14px;
+    
 }
-
+/* Утилиты */
 .list {
-    list-style: none;`
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
     text-decoration: none;
+    display: block;
 }   
 
 /* Header */
+
 .logo {
     font-family: Raleway;
     font-style: normal;
@@ -34,8 +50,11 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
-   
+    color:var(--title-text-color);
+
+    margin-right: 85px;
+    padding-top: 25px; 
+    padding-bottom: 25px;
 }
 
 .logo:hover,
@@ -54,8 +73,15 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color); 
+    color: var(--title-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;  
 }
+
+.site-nav-list-item-link{
+    display: block;
+}
+
 
 .site-nav-list-item-link:hover,
 .site-nav-list-item-link:focus,
@@ -63,56 +89,118 @@ body {
 .header-address-mail:focus, 
 .header-address-tel:hover,
 .header-address-tel:focus {
-    color: var(--accent-color)
-}    
+    color: var(--accent-color);  
+}  
   
 .header-address-mail, 
 .header-address-tel
-    {color:var(--primery-text-color);
+    {color:var(--primery-text-color); 
+     
 }
 
+.site-nav-list{
+    display: flex;  
+ 
+    
+}
+
+.site-nav-list-item:not(:last-child){
+    margin-right: 50px;
+ 
+}
+
+ .navigation{
+    display: flex;
+    align-items: center;
+ }  
+
+.header .container{
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+}
+
+.header-address-mail{
+    margin-right: 50px;
+}
+
+.header{
+    padding-top: 25px;
+    padding-bottom: 25px; 
+}
+
+.header-address{
+    display: flex;
+}
+
+
+/*.site-nav-list-item{
+    margin-right: 50px;
+}
+.site-nav-list-item:last-child{
+    margin-right: 0;
+}
+*/
 
 
  /* MAIN */
 
   /* HERO */
+.hero{
+    text-align: center;
+   background-color: green;
+}
+
 .hero-title{
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
+    line-height: 1.36; 
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: red;
-}
+    color:red;
 
-.hero-btn{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 200px;
+  
+}
+    
+
+.btn{
+    font-family: Roboto;
+    font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 30px;
     letter-spacing: 0.06em;
-    color:var(--title-secondary-text-color);
     background-color: var(--button-color);
+    color: var(--title-secondary-text-color);
     padding: 10px 32px;
-    border-radius: 4px;
-    display: inline-block;
+    min-width: 136px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
+    border-radius: 4px;
+    padding-bottom: 200px; 
+    /* flex-grow: 0; */
+}
+  
+
 
 /* Signs about us */
+.about-us{
+    background-color:blue;
+}
+
 .section{
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    display: flex;
 }
 
 .section-title{
-    color:var(--title-text-color)
+    color:var(--title-text-color);
+    margin-top: 0px;
 }
 
 .discription{
@@ -120,11 +208,19 @@ body {
     line-height: 24px;
 }
 
+
 /* What we do */
 .section-we-do{
     font-weight: bold;
     letter-spacing: 0.03em;
+  
+    outline: 1px solid tomato; 
 }
+
+.section-title-we-do{
+    margin-top: 0px;
+}
+
 .section-title-we-do,
 .section-title-our-team,
 .section-title-regular-clients{
@@ -137,13 +233,15 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: red
+    color:var(--title-secondary-text-color);
+    
 }
 
 /* Our team */
 .our-team{
     background-color: var(--secondary-bg-color);
 }
+
 
 .section-title-our-team,
 .section-title-our-team-names,
@@ -167,6 +265,8 @@ body {
 
 
 /* Regular clients */
+
+
 
 
 
@@ -221,6 +321,12 @@ text-transform: uppercase;
     background-color: var(--button-color);
 }
 
+.btn.footer:hover,
+.btn.footer:focus{
+    color:var(--title-text-color);
+    background-color: var(--button-color);
+}
+
 
 /* цвет основного текста #212121*/
 /* второстепенный цвет #757575*/
@@ -232,7 +338,28 @@ text-transform: uppercase;
 /* PORTFOLIO */
 
 /* Our works */
+.our-works{
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.our-works-list{
+    display: flex;
+     
+}
+
+.pictures{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .our-works-list-btn{
+    width:370px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -263,6 +390,17 @@ color:var(--title-text-color);
     letter-spacing: 0.03em;
     color: #757575;
 }
+© 2020 GitHub, Inc.
+
+
+
+
+
+
+
+
+
+
 
             /* LESSON 3 */
 
@@ -277,9 +415,4 @@ html{
     box-sizing: inherit;
 } */
 
- .container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
+
