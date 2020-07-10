@@ -38,20 +38,21 @@
 
     <!--MAIN-->
     <main>
-    <div class="container">
+    
     <!--HERO-->
         <section class="hero">
-          <h1 
-          class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br /> ДЛЯ ВАШЕГО БИЗНЕСА
-            </h1>
-          <button class="btn">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br /> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                <button class="btn">Заказать услугу</button>
+            </div> 
         </section>
-    </div>    
+       
 
        <!--signs about us--> 
-       <div class="container">
+       
         <section class="about-us">
-            <h2 hidden> Second title</h2>
+            <div class="container">
+            <h2 hidden > Second title</h2>
             <ul class="section list">
                 <li class="section-list">
                     <h3 class="section-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -73,46 +74,58 @@
                     <p class="discription">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>   
                 </li>
             </ul>
-         </section>
-        </div>
+            </div>
+        </section>
+        
 
          <!--What we do-->
+        
          <section class="section-we-do">
+         <div class="container">
              <h2 class="section-title-we-do"> Чем мы занимаемся </h2>
-            
-                 <p class="discription-we-do"> Десктопные приложения</p>
-                 <p class="discription-we-do"> Мобильные приложения</p>
-                 <p class="discription-we-do"> Дизайнерские решения</p>
-           
+             <ul class="list-we-do">
+                <li class="list-we-do-items"> 
+                    <p class="discription-we-do"> Десктопные приложения</p>
+                </li>
+                <li class="list-we-do-items">
+                    <p class="discription-we-do"> Мобильные приложения</p>
+                </li>
+                <li class="list-we-do-items">
+                    <p class="discription-we-do"> Дизайнерские решения</p>
+                </li>
+            </ul>
+               
+        </div class="container">      
          </section>
+        
 
          <!--Our team-->
          
             <section class="our-team">
-            
+            <div class="container">
                 <h2 class="section-title-our-team"> Наша команда </h2>
-                <ul class="list">
-                    <li>
+                <ul class="our-team-list list">
+                    <li class="items">
                          <img class="our-team-img" src="./image/1img.jpg" alt="Николай Кучеренко">
                          <h3 class="section-title-our-team-names"> Николай Кучеренко</h3>
                          <p class="description-our-team"> Product Designer</p>
                             <ul class="social-list">
                               <li class="social-list-items"> 
-                                  <a class="social-list-items-link" href="" aria-label="Instagram"></a> 
+                                  <a class="social-list-items-link" href="" aria-label="Instagram">A</a> 
                               </li>
                               <li class="social-list-items"> 
-                                  <a class="social-list-items-link" href="" aria-label="Twitter icon"></a> 
+                                  <a class="social-list-items-link" href="" aria-label="Twitter icon">A</a> 
                               </li>
                               <li class="social-list-items"> 
-                                  <a class="social-list-items-link" href="" aria-label="Facebook icon"></a> 
+                                  <a class="social-list-items-link" href="" aria-label="Facebook icon">A</a> 
                               </li>
                               <li class="social-list-items"> 
-                                  <a class="social-list-items-link" href="" aria-label="Linkedyn icon"></a> 
+                                  <a class="social-list-items-link" href="" aria-label="Linkedyn icon">A</a> 
                               </li>
                             </ul>
                     </li>
     
-                    <li>
+                    <li class="items">
                          <img  class="our-team-img" src="./image/2img.jpg" alt="Ольга Иванова">
                          <h3 class="section-title-our-team-names"> Ольга Иванова </h3>
                          <p class="description-our-team"> Frontend Developer </p>
@@ -132,7 +145,7 @@
                             </ul>
                     </li>
     
-                    <li>
+                    <li class="items">
                         <img class="our-team-img" src="./image/3img.jpg" alt="Андрей Шевченко">
                         <h3 class="section-title-our-team-names"> Андрей Шевченко</h3>
                         <p class="description-our-team"> Marketing</p>
@@ -152,7 +165,7 @@
                             </ul>
                     </li>
     
-                    <li>
+                    <li class="items">
                          <img class="our-team-img" src="./image/4img.jpg" alt="Иван Николаев">
                          <h3 class="section-title-our-team-names"> Иван Николаев</h3>
                          <p class="description-our-team">Ul Designer</p>
@@ -172,13 +185,15 @@
                             </ul>
                     </li>
                 </ul>
-            
+            </div>
          </section>
+       
 
          <!-- Regular clients-->
          <section class="regular-clients">
+             <div class="container">
              <h2 class="section-title-regular-clients"> Постоянные клиенты </h2>
-             <ul class="list">
+             <ul class=" list">
                 
                 <li class="regular-clients-links">
                      <a href="">
@@ -211,6 +226,7 @@
                 </li>
 
              </ul>
+            </div>
          </section>
          
     </main>
@@ -218,7 +234,8 @@
 
     <footer>
     <div class="container">
-        <div>  
+        <div class="footer">
+        <div class="footer1" >  
             <a class="logo link" href="./index.html">
                 <span class="web">Web</span> <span class="Studio-f"> Studio </span>
             </a>
@@ -231,9 +248,9 @@
         </div>
          
 
-        <div>
+        <div class="wrapper-f">
              <b class="contacts-join-f">Присоединяйтесь</b>
-             <ul>
+             <ul class="items">
                 <li> 
                     <a href="" aria-label="Instagram"></a> 
                 </li>
@@ -249,11 +266,12 @@
             </ul>
         </div>  
      
-        <div>
+        <div hidden>
              <b class="contact-subscribe-f">Подпишитесь на рассылку</b> 
              <button class="btn footer">Подписаться</button>
         </div>
-    </div>
+        </div>
+        </div>
     </footer>
     
 </body>
